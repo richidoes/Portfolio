@@ -13,6 +13,7 @@ const ContactButton: React.FC<AppProps> = ({ title, subtitle }) => {
       href="https://www.linkedin.com/in/ricardo-de-le%C3%B3n-garc%C3%ADa-319679166/"
       target="_blank"
       rel="noopener noreferrer"
+      style={{ width: 280 }}
     >
       <Wrapper>
         <IconWrapper>

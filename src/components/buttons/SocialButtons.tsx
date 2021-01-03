@@ -6,7 +6,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 import { SmallText } from "../styles/TextStyles";
 
-const SocialButtons = () => {
+const SocialButtons: React.FC = () => {
   return (
     <Wrapper>
       <li className="linkedinIcon">
@@ -16,26 +16,26 @@ const SocialButtons = () => {
         <FontAwesomeIcon icon={faGithub} />{" "}
       </li>
       <li className="downloadIcon">
-        <a href="/">
+        <DownloadWrap>
           <FontAwesomeIcon icon={faDownload} />
           <Text>Descargar CV</Text>
-        </a>
+        </DownloadWrap>
       </li>
     </Wrapper>
   );
 };
-
 export default SocialButtons;
 
 const Wrapper = styled.ul`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 200px;
   justify-content: space-evenly;
   text-align: center;
 
   li {
+    position: relative;
+    display: block;
     color: #666;
     font-size: 30px;
     height: 60px;
@@ -44,6 +44,64 @@ const Wrapper = styled.ul`
     line-height: 60px;
     border-radius: 50%;
     margin: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  li:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    /* background: #d35400; */
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+  }
+
+  li:nth-child(1):before {
+    background: #0e76a8;
+  }
+  li:nth-child(2):before {
+    background: #8e2de2;
+  }
+  li:nth-child(3):before {
+    background: #25d366;
+  }
+
+  li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+  }
+
+  li:nth-child(1):hover:before {
+    box-shadow: 0 0 15px #0e76a8;
+  }
+  li:nth-child(2):hover:before {
+    box-shadow: 0 0 15px #8e2de2;
+  }
+  li:nth-child(3):hover:before {
+    box-shadow: 0 0 15px #25d366;
+  }
+
+  li:nth-child(1):hover {
+    color: #0e76a8;
+    box-shadow: 0 0 15px #0e76a8;
+    text-shadow: 0 0 15px #0e76a8;
+  }
+  li:nth-child(2):hover {
+    color: #8e2de2;
+    box-shadow: 0 0 15px #8e2de2;
+    text-shadow: 0 0 15px #8e2de2;
+  }
+  li:nth-child(3):hover {
+    color: #25d366;
+    box-shadow: 0 0 15px #25d366;
+    text-shadow: 0 0 15px #25d366;
   }
 
   a {
@@ -51,9 +109,13 @@ const Wrapper = styled.ul`
   }
 `;
 
+const DownloadWrap = styled.div`
+  width: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+
 const Text = styled.div`
-  font-size: 13px;
-  position: absolute;
-  left: 100px;
-  top: 285px;
+  font-size: 15px;
 `;

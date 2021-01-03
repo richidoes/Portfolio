@@ -9,7 +9,7 @@ interface AppProps {
 
 const DownloadButton: React.FC<AppProps> = ({ title, subtitle }) => {
   return (
-    <a href="/">
+    <a href="/" style={{ width: 280 }}>
       <Wrapper>
         <IconWrapper>
           <Icon src="images/icons/billing.svg" />
