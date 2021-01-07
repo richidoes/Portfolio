@@ -4,23 +4,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
-import { SmallText } from "../styles/TextStyles";
-
 const SocialButtons: React.FC = () => {
   return (
     <Wrapper>
-      <li className="linkedinIcon">
-        <FontAwesomeIcon icon={faLinkedinIn} />{" "}
-      </li>
-      <li className="githubIcon">
-        <FontAwesomeIcon icon={faGithub} />{" "}
-      </li>
-      <li className="downloadIcon">
-        <DownloadWrap>
-          <FontAwesomeIcon icon={faDownload} />
-          <Text>Descargar CV</Text>
-        </DownloadWrap>
-      </li>
+      <a href="/">
+        <li className="linkedinIcon">
+          <FontAwesomeIcon icon={faLinkedinIn} />{" "}
+        </li>
+      </a>
+
+      <a href="/">
+        <li className="githubIcon">
+          <FontAwesomeIcon icon={faGithub} />{" "}
+        </li>
+      </a>
+
+      <a href="/">
+        <li className="downloadIcon">
+          <DownloadWrap>
+            <FontAwesomeIcon icon={faDownload} />
+            <Text>Descargar CV</Text>
+          </DownloadWrap>
+        </li>
+      </a>
     </Wrapper>
   );
 };
@@ -33,7 +39,7 @@ const Wrapper = styled.ul`
   justify-content: space-evenly;
   text-align: center;
 
-  li {
+  a {
     position: relative;
     display: block;
     color: #666;
@@ -48,12 +54,11 @@ const Wrapper = styled.ul`
     transition: 0.5s;
   }
 
-  li:before {
+  a :before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
-    /* background: #d35400; */
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -62,50 +67,69 @@ const Wrapper = styled.ul`
     transition: 0.5s;
   }
 
-  li:nth-child(1):before {
+  a :nth-child(1):before {
     background: #0e76a8;
   }
-  li:nth-child(2):before {
+  a :nth-child(2):before {
     background: #8e2de2;
   }
-  li:nth-child(3):before {
+  a :nth-child(3):before {
     background: #25d366;
   }
 
-  li:hover:before {
+  a :hover:before {
     filter: blur(3px);
     transform: scale(1.2);
     /* box-shadow: 0 0 15px #d35400; */
   }
 
-  li:nth-child(1):hover:before {
+  a :nth-child(1):hover:before {
     box-shadow: 0 0 15px #0e76a8;
   }
-  li:nth-child(2):hover:before {
+  a :nth-child(2):hover:before {
     box-shadow: 0 0 15px #8e2de2;
   }
-  li:nth-child(3):hover:before {
+  a :nth-child(3):hover:before {
     box-shadow: 0 0 15px #25d366;
   }
 
-  li:nth-child(1):hover {
+  a :nth-child(1):hover {
     color: #0e76a8;
     box-shadow: 0 0 15px #0e76a8;
     text-shadow: 0 0 15px #0e76a8;
   }
-  li:nth-child(2):hover {
+  a :nth-child(2):hover {
     color: #8e2de2;
     box-shadow: 0 0 15px #8e2de2;
     text-shadow: 0 0 15px #8e2de2;
   }
-  li:nth-child(3):hover {
+  a :nth-child(3):hover {
     color: #25d366;
     box-shadow: 0 0 15px #25d366;
     text-shadow: 0 0 15px #25d366;
   }
 
   a {
-    color: #666;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  @media (prefers-color-scheme: light) {
+    a {
+      color: rgb(255 255 255 / 85%);
+      background: #171515;
+    }
+  }
+  @media (max-width: 900px) {
+    flex-direction: row;
+    justify-content: start;
+  }
+  @media (max-width: 450px) {
+    a {
+      font-size: 15px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+    }
   }
 `;
 
@@ -114,8 +138,19 @@ const DownloadWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 450px) {
+    width: 105px;
+  }
 `;
 
 const Text = styled.div`
   font-size: 15px;
+
+  @media (prefers-color-scheme: light) {
+    color: rgb(0 0 0 / 85%);
+  }
+  @media (max-width: 450px) {
+    font-size: 10px;
+  }
 `;
