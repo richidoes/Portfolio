@@ -4,6 +4,7 @@ import Layout from "../components/layout/Layout";
 import SEO from "../components/layout/Seo";
 import AboutSection from "../components/sections/AboutSection";
 import AuthorSection from "../components/sections/AuthorSection";
+import SkillsSection from "../components/sections/SkillsSection";
 
 const IndexPage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage: React.FC = () => {
       <SEO title="Home" />
       <AuthorSection />
       <AboutSection />
+      <SkillsSection />
     </Layout>
   );
 };

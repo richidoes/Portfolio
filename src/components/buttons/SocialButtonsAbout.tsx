@@ -42,7 +42,7 @@ const Wrapper = styled.ul`
   a {
     position: relative;
     display: block;
-    color: #666;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 30px;
     height: 60px;
     width: 60px;
@@ -80,7 +80,6 @@ const Wrapper = styled.ul`
   a :hover:before {
     filter: blur(3px);
     transform: scale(1.2);
-    /* box-shadow: 0 0 15px #d35400; */
   }
 
   a :nth-child(1):hover:before {
@@ -109,10 +108,6 @@ const Wrapper = styled.ul`
     text-shadow: 0 0 15px #25d366;
   }
 
-  a {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
   @media (prefers-color-scheme: light) {
     a {
       color: rgb(255 255 255 / 85%);
@@ -123,7 +118,7 @@ const Wrapper = styled.ul`
     flex-direction: row;
     justify-content: start;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     a {
       font-size: 15px;
       height: 30px;
@@ -139,7 +134,7 @@ const DownloadWrap = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     width: 105px;
   }
 `;
@@ -150,7 +145,7 @@ const Text = styled.div`
   @media (prefers-color-scheme: light) {
     color: rgb(0 0 0 / 85%);
   }
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     font-size: 10px;
   }
 `;

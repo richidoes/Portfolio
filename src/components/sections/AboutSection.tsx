@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import SocialButtonsAbout from "../buttons/SocialButtonsAbout";
+import { themes } from "../styles/ColorStyles";
 import { H3, MediumText } from "../styles/TextStyles";
 
 const AboutSection: React.FC = () => {
@@ -47,6 +48,16 @@ export default AboutSection;
 
 const Wrapper = styled.div`
   position: relative;
+  max-width: 1234px;
+  margin: 0 auto;
+  padding: 550px 30px 100px 30px;
+
+  @media (max-width: 770px) {
+    padding: 700px 30px 100px 30px;
+  }
+  @media (max-width: 550px) {
+    padding: 480px 30px 100px 30px;
+  }
 `;
 
 const Backbox = styled.div`
@@ -79,7 +90,7 @@ const Backbox = styled.div`
     height: 620px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     width: 328px;
     height: 420px;
     top: 50px;
@@ -90,7 +101,7 @@ const Backbox = styled.div`
 const AboutWrapper = styled.div`
   position: absolute;
   width: 932px;
-  height: 422px; //400
+  height: 422px;
   top: 80px;
   left: calc(50% - 932px / 2);
   padding: 20px;
@@ -99,8 +110,6 @@ const AboutWrapper = styled.div`
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(40px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-
-  /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 40px;
 
@@ -123,7 +132,7 @@ const AboutWrapper = styled.div`
     height: 620px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     width: 320px;
     height: 420px;
     top: 50px;
@@ -153,11 +162,8 @@ const Title = styled(H3)`
   left: 45%;
   top: 5px;
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 130%;
-
-  color: rgba(255, 255, 255, 0.7);
+  color: ${themes.dark.text2};
 
   @media (prefers-color-scheme: light) {
     color: #3913b8;
@@ -180,21 +186,19 @@ const TextWrapper = styled.div`
   @media (max-width: 768px) {
     width: 438px;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     width: 280px;
   }
 `;
 
 const Text = styled(MediumText)`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: ${themes.dark.text2};
   text-align: justify;
 
   @media (prefers-color-scheme: light) {
     color: rgb(0 0 0 / 90%);
   }
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     font-size: 12px;
   }
 `;
