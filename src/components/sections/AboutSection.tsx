@@ -69,7 +69,6 @@ const Backbox = styled.div`
   background: linear-gradient(180deg, #2fb8ff 0%, #9eecd9 100%);
   backdrop-filter: blur(40px);
 
-  mix-blend-mode: normal;
   border-radius: 60px 60px 60px 60px;
   transform: matrix(1, 0.03, 0, 0.99, 7, 10);
   z-index: -1;
@@ -77,24 +76,25 @@ const Backbox = styled.div`
   @media (prefers-color-scheme: dark) {
     background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7 98.38%);
   }
-
   @media (max-width: 900px) {
     width: 770px;
     height: 520px;
     left: 5%;
     transform: matrix(1, 0.02, 0, 0.99, 25, 12);
   }
-
   @media (max-width: 768px) {
     width: 500px;
     height: 620px;
   }
-
   @media (max-width: 550px) {
     width: 328px;
     height: 420px;
     top: 50px;
     transform: matrix(1, 0.04, 0, 0.99, 11, 10);
+  }
+  @media (max-width: 322px) {
+    width: 270px;
+    height: 445px;
   }
 `;
 
@@ -119,24 +119,25 @@ const AboutWrapper = styled.div`
     box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(40px);
   }
-
   @media (max-width: 900px) {
     width: 770px;
     height: 520px;
     left: 5%;
     margin: 0 10px;
   }
-
   @media (max-width: 768px) {
     width: 500px;
     height: 620px;
   }
-
   @media (max-width: 550px) {
     width: 320px;
     height: 420px;
     top: 50px;
     padding: 10px;
+  }
+  @media (max-width: 322px) {
+    width: 270px;
+    height: 445px;
   }
 `;
 
@@ -149,7 +150,6 @@ const ContentWrapper = styled.div`
     grid-template-columns: auto;
     gap: 30px;
   }
-
   @media (max-width: 768px) {
     gap: 20px;
   }
@@ -188,6 +188,9 @@ const TextWrapper = styled.div`
   }
   @media (max-width: 550px) {
     width: 280px;
+  }
+  @media (max-width: 322px) {
+    width: 230px;
   }
 `;
 

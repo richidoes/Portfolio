@@ -5,7 +5,7 @@ export const skills = [
     knowledge: [
       { title: "styled components" },
       { title: "Bootstrap" },
-      { title: "Sass - basico" },
+      { title: "Sass" },
     ],
     background: "linear-gradient(188.3deg, #55C2FA 4.78%, #0D7CF0 93.63%)",
   },
@@ -59,19 +59,19 @@ export const skills = [
   {
     logo: "images/logos/graphql.png",
     title: "GraphQL",
-    knowledge: [{ title: "Basico" }],
+    knowledge: [{ title: "" }],
     background: "linear-gradient(180deg, #FF7373 0%, #491EB8 100%)",
   },
   {
     logo: "images/logos/nodejs-logo.png",
     title: "NodeJS",
-    knowledge: [{ title: "Basico" }],
+    knowledge: [{ title: "" }],
     background: "linear-gradient(180deg, #7EF29D 0%, #0F68A9 100%)",
   },
   {
     logo: "images/logos/git-logo.png",
     title: "Git",
-    knowledge: [{ title: "Basico" }],
+    knowledge: [{ title: "" }],
     background: "linear-gradient(180deg, #FF5252 0%, #FF72B6 100%)",
   },
 ];

@@ -88,12 +88,19 @@ const Wrapper = styled.div`
   @media (max-width: 750px) {
     width: 325px;
   }
+  @media (max-width: 322px) {
+    width: 320px;
+  }
 
   //slider styles
   .slick-slider {
     .slick-dots {
       bottom: -2.5vw;
       li {
+        @media (max-width: 322px) {
+          width: 13px;
+          height: 12px;
+        }
         button {
           width: 20px;
           height: 20px;
@@ -102,6 +109,10 @@ const Wrapper = styled.div`
 
           @media (prefers-color-scheme: light) {
             border: 1px solid #000;
+          }
+          @media (max-width: 322px) {
+            width: 10px;
+            height: 10px;
           }
           &:before {
             position: absolute;
@@ -120,6 +131,12 @@ const Wrapper = styled.div`
 
             @media (prefers-color-scheme: light) {
               background-color: #000;
+            }
+            @media (max-width: 322px) {
+              width: 5px;
+              height: 5px;
+              top: 49%;
+              left: 49%;
             }
           }
         }
@@ -151,12 +168,26 @@ const Wrapper = styled.div`
       @media (prefers-color-scheme: light) {
         color: ${themes.light.text2};
       }
+      @media (max-width: 450px) {
+        font-size: 20px;
+        display: none;
+      }
     }
     .slick-next {
       right: -25px;
+
+      @media (max-width: 450px) {
+        right: -21px;
+        display: none !important;
+      }
     }
     .slick-prev {
       left: -40px;
+
+      @media (max-width: 450px) {
+        left: -22px;
+        display: none !important;
+      }
     }
   }
 `;
@@ -183,14 +214,14 @@ const CardWrapper = styled.div`
   height: 340px;
   background: rgba(15, 14, 71, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(40px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 40px;
 
   @media (prefers-color-scheme: light) {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 15px 0 rgba(31, 38, 135, 0.37);
   }
 `;
 
