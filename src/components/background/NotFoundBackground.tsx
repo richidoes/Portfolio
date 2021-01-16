@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const FooterBackground: React.FC = () => {
+const NotfoundBackground: React.FC = () => {
   return (
     <Wrapper>
-      <TopWave src="/images/waves/footer-wave2.svg" />
-      <Wave src="/images/waves/footer-wave3.svg" />
+      <Wave src="/images/waves/testimonial-wave5.svg" style={{ top: "50px" }} />
+      <BottomWave src="/images/waves/hero-wave3.svg" style={{ top: "250px" }} />
     </Wrapper>
   );
 };
 
-export default FooterBackground;
+export default NotfoundBackground;
 
 const Wrapper = styled.div`
   position: relative;
@@ -19,18 +19,14 @@ const Wrapper = styled.div`
 const Wave = styled.img`
   position: absolute;
   z-index: -1;
-  top: 250px;
 
   @media (min-width: 1440px) {
     width: 100%;
   }
 `;
 
-const TopWave = styled(Wave)`
-  top: 12px;
-  transform: scaleY(0.3) scaleX(-1);
-
+const BottomWave = styled(Wave)`
   @media (prefers-color-scheme: dark) {
-    content: url("images/waves/footer-wave1.svg");
+    content: url("images/waves/hero-wave3-dark.svg");
   }
 `;

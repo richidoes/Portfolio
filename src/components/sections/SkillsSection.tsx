@@ -7,7 +7,7 @@ import Carousel from "../tooltips/Carousel";
 
 const SkillsSection = () => {
   return (
-    <Wrapper>
+    <Wrapper id="skillsSection">
       <Title>Habilidades</Title>
       <Carousel />
     </Wrapper>

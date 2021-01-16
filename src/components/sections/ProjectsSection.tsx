@@ -7,7 +7,7 @@ import Projects from "../layout/Projects";
 
 const ProjectsSection = () => {
   return (
-    <Wrapper>
+    <Wrapper id="projectsSection">
       <Title>Proyectos</Title>
       <Projects />
     </Wrapper>

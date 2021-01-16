@@ -2,7 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { H1, MediumText } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
-import ContactButton from "../buttons/ContactButton";
+
 import MockupAnimation from "../animations/MockupAnimation";
 import WaveBackground from "../background/WaveBackground";
 import DownloadButton from "../buttons/DownloadButton";
@@ -16,14 +16,17 @@ const AuthorSection: React.FC = () => {
           <Title>
             Ricardo <br />
             De Leon <br />
-            <span>React</span> apps developer
+            <span>
+              Desarrollador
+              <br />
+              Front-end
+            </span>
           </Title>
           <Description>
-            Desarrollador front-end especializado en react
-            richard.deleon.garcia@gmail.com
+            Desarrollo de sitios y aplicaciones web, asi como aplicaciones
+            moviles multi-plataforma.
           </Description>
-          <ContactButton title="Contactame" subtitle="LinkedIn" />
-          <DownloadButton title="CV" subtitle="Descargar" />
+          <DownloadButton title="Resumen (cv)" subtitle="Descargar" />
         </TextWrapper>
         <MockupAnimation />
       </ContentWrapper>
@@ -44,7 +47,7 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
-  padding: 200px 30px 100px 30px;
+  padding: 200px 30px 300px 30px;
   display: grid;
   grid-template-columns: 360px auto;
 

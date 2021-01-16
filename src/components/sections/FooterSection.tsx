@@ -1,25 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import FooterBackground from "../background/FooterBackground";
-
 import { BodyIntro, MediumText } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
 import SocialButtonsFooter from "../buttons/SocialButtonsFooter";
 
 const FooterSection = () => {
   return (
-    <Wrapper>
+    <Wrapper id="footerSection">
       <FooterBackground />
       <ContentWrapper>
         <Text id="contact">Contactame</Text>
         <SocialButtonsFooter />
-        <Info id="email">
-          <FontAwesomeIcon icon={faEnvelope} style={{ padding: 20 }} />
-          richard.deleon.garcia@gmail.com
-        </Info>
         <Info id="owner">Ricardo De Leon &copy; 2021</Info>
       </ContentWrapper>
     </Wrapper>

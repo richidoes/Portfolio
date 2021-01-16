@@ -7,7 +7,7 @@ import { H3, MediumText } from "../styles/TextStyles";
 
 const AboutSection: React.FC = () => {
   return (
-    <Wrapper>
+    <Wrapper id="aboutSection">
       <Title>Sobre Mi</Title>
       <Backbox />
       <AboutWrapper>
