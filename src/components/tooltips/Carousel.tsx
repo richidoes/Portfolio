@@ -73,7 +73,7 @@ export default Carousel;
 const Wrapper = styled.div`
   //container styles
   max-width: 1634px;
-  height: 450px;
+  height: 650px;
   margin: 0 auto;
 
   @media (max-width: 1650px) {
@@ -90,6 +90,7 @@ const Wrapper = styled.div`
   }
   @media (max-width: 322px) {
     width: 320px;
+    height: 450px;
   }
 
   //slider styles

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, title, keywords, image, url, author }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -12,6 +12,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -20,6 +21,14 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
+  const metaAuthor = author || site.siteMetadata.author;
+  const metaUrl = url || site.siteMetadata.url;
+  const metaImage = image || site.siteMetadata.image;
+  const metaKeywords = keywords || [
+    "Portafolio",
+    "Portafolio Ricardo De Leon",
+    "Ricardo De Leon Portafolio",
+  ];
 
   return (
     <Helmet
@@ -46,22 +55,41 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          name: `og:image`,
+          content: metaImage,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          name: `og:url`,
+          content: metaUrl,
         },
         {
-          name: `twitter:title`,
+          name: `github:card`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `github:creator`,
+          content: metaAuthor,
+        },
+        {
+          name: `github:title`,
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: `github:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+        {
+          name: `github:image`,
+          content: metaImage,
+        },
+      ].concat(
+        metaKeywords && metaKeywords.lenth > 0
+          ? {
+              name: `keywords`,
+              content: metaKeywords.join(`, `),
+            }
+          : []
+      )}
     />
   );
 }
@@ -77,6 +105,10 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  keywords: PropTypes.string,
+  image: PropTypes.string,
+  url: PropTypes.string,
+  author: PropTypes.string,
 };
 
 export default SEO;

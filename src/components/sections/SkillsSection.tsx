@@ -4,10 +4,12 @@ import styled from "styled-components";
 import { H3 } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
 import Carousel from "../tooltips/Carousel";
+import SkillsBackground from "../background/SkillsBackground";
 
 const SkillsSection = () => {
   return (
     <Wrapper id="skillsSection">
+      <SkillsBackground />
       <Title>Habilidades</Title>
       <Carousel />
     </Wrapper>
@@ -18,6 +20,8 @@ export default SkillsSection;
 
 const Wrapper = styled.div`
   position: relative;
+  overflow: hidden;
+  margin-top: 150px;
 `;
 
 const Title = styled(H3)`

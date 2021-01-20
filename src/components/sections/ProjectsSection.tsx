@@ -4,10 +4,12 @@ import styled from "styled-components";
 import { H3 } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
 import Projects from "../layout/Projects";
+import ProjectsCubes from "../animations/ProjectsCubes";
 
 const ProjectsSection = () => {
   return (
     <Wrapper id="projectsSection">
+      <ProjectsCubes />
       <Title>Proyectos</Title>
       <Projects />
     </Wrapper>

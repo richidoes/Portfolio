@@ -12,4 +12,4 @@
 
     El sitio se ejecutara en http://localhost:8000!
 
-    comienza editando `src/pages/index.jsx`!
+    comienza editando `src/pages/index.tsx`!

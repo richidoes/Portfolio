@@ -11,7 +11,10 @@ const NotFoundPage: React.FC = () => {
   return (
     <Wrapper>
       <GlobalStyle />
-      <SEO title="404: Not found" />
+      <SEO
+        title="404: Not found"
+        description="Pantalla por default para un error 404"
+      />
       <NotFoundBackground />
       <Container>
         <Title>404</Title>

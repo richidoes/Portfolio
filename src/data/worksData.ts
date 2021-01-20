@@ -22,7 +22,7 @@ export const pokedex: work = {
 };
 
 export const course: work = {
-  title: "Course App",
+  title: "Courses App",
   image: "images/works/course.svg",
 
   getApp: "/",
