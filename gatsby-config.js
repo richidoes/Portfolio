@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ricardo De Leon`,
     description: `Este es mi sitio web, donde podras ver mi portafolio de proyectos y saber mas sobre mis habilidades y conocimientos.`,
-    url: "",
+    url: "www.ricardodeleon.net",
     image: "images/logos/icon-mini.svg",
     gitHubUsername: `@richidoes`,
     author: "richidoes",

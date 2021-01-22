@@ -31,8 +31,12 @@ const Projects = () => {
             <br />
             Tecnologias usadas : Expo, React Native, Firebase.
           </Description>
-          <a href={nicegdl.getApp}>Descargar la app (solo android)</a>
-          <a href={nicegdl.github}>Ver Codigo</a>
+          <a href={nicegdl.getApp} target="_blank" rel="noopener noreferrer">
+            Descargar la app (solo android)
+          </a>
+          <a href={nicegdl.github} target="_blank" rel="noopener noreferrer">
+            Ver Codigo
+          </a>
         </TextWrapper>
       </Container>
       <Container className="pokedex">
@@ -47,15 +51,19 @@ const Projects = () => {
             apariencia del pokemon que seleccionemos.
             <br />
             La web utiliza un <Strong>sistema de rutas protegidas</Strong> donde
-            solo el usuario registrado tiene acceso al listadoasi como a otras
+            solo el usuario registrado tiene acceso al listado asi como a otras
             caracteristicas como cambiar su foto de perfil y su nombre de
             usuario.
             <br />
             <br />
             Tecnologias usadas : React, Redux, Firebase.
           </Description>
-          <a href={pokedex.getApp}>Visitar Web</a>
-          <a href={pokedex.github}>Ver Codigo</a>
+          <a href={pokedex.getApp} target="_blank" rel="noopener noreferrer">
+            Visitar Web
+          </a>
+          <a href={pokedex.github} target="_blank" rel="noopener noreferrer">
+            Ver Codigo
+          </a>
         </TextWrapper>
       </Container>
       <Container className="course-app">
@@ -85,8 +93,12 @@ const Projects = () => {
             <br />
             Tecnologias usadas : Expo, React Native, Firebase, GraphQL.
           </Description>
-          <a href={course.getApp}>Descargar la app (solo android)</a>
-          <a href={course.github}>Ver Codigo</a>
+          <a href={course.getApp} target="_blank" rel="noopener noreferrer">
+            Descargar la app (solo android)
+          </a>
+          <a href={course.github} target="_blank" rel="noopener noreferrer">
+            Ver Codigo
+          </a>
         </TextWrapper>
       </Container>
       <Container className="weather">
@@ -106,8 +118,12 @@ const Projects = () => {
             <br />
             Tecnologias usadas : React.
           </Description>
-          <a href={weather.getApp}>Visitar Web</a>
-          <a href={weather.github}>Ver Codigo</a>
+          <a href={weather.getApp} target="_blank" rel="noopener noreferrer">
+            Visitar Web
+          </a>
+          <a href={weather.github} target="_blank" rel="noopener noreferrer">
+            Ver Codigo
+          </a>
         </TextWrapper>
       </Container>
     </Wrapper>

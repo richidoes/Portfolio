@@ -6,13 +6,21 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 const SocialButtonsFooter: React.FC = () => {
   return (
     <Wrapper>
-      <a href="/">
+      <a
+        href="https://www.linkedin.com/in/ricardo-deleon/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <li className="linkedinIcon">
           <FontAwesomeIcon icon={faLinkedinIn} />{" "}
         </li>
       </a>
 
-      <a href="/">
+      <a
+        href="https://github.com/richidoes"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <li className="githubIcon">
           <FontAwesomeIcon icon={faGithub} />{" "}
         </li>
