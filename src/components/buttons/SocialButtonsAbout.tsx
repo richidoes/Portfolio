@@ -7,19 +7,31 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 const SocialButtons: React.FC = () => {
   return (
     <Wrapper>
-      <a href="/">
+      <a
+        href="https://www.linkedin.com/in/ricardo-deleon/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <li className="linkedinIcon">
           <FontAwesomeIcon icon={faLinkedinIn} />{" "}
         </li>
       </a>
 
-      <a href="/">
+      <a
+        href="https://github.com/richidoes"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <li className="githubIcon">
           <FontAwesomeIcon icon={faGithub} />{" "}
         </li>
       </a>
 
-      <a href="/">
+      <a
+        href="https://drive.google.com/uc?export=download&id=10i_rf26T88Jcb-A7MfqcMxuDsnZQpXeI"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <li className="downloadIcon">
           <DownloadWrap>
             <FontAwesomeIcon icon={faDownload} />

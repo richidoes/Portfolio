@@ -9,7 +9,12 @@ interface AppProps {
 
 const DownloadButton: React.FC<AppProps> = ({ title, subtitle }) => {
   return (
-    <a href="/" style={{ width: 280 }}>
+    <a
+      href="https://drive.google.com/uc?export=download&id=10i_rf26T88Jcb-A7MfqcMxuDsnZQpXeI"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ width: 280 }}
+    >
       <Wrapper>
         <IconWrapper>
           <Icon src="images/icons/billing.svg" />
