@@ -25,9 +25,14 @@ function SEO({ description, lang, title, keywords, image, url, author }) {
   const metaUrl = url || site.siteMetadata.url;
   const metaImage = image || site.siteMetadata.image;
   const metaKeywords = keywords || [
-    "Portafolio",
-    "Portafolio Ricardo De Leon",
-    "Ricardo De Leon Portafolio",
+    "ricardodeleon",
+    "Ricardo De Leon",
+    "ricardo de leon",
+    "desarrollador frontend",
+    "desarrollador web",
+    "desarrollador aplicaciones moviles",
+    "react",
+    "react native",
   ];
 
   return (
