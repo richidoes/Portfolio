@@ -12,7 +12,7 @@ const NotFoundPage: React.FC = () => {
     <Wrapper>
       <GlobalStyle />
       <SEO
-        title="404: Not found"
+        title="Error 404: Not found - Ricardo De Leon"
         description="Pantalla por default para un error 404"
       />
       <NotFoundBackground />

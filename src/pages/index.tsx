@@ -11,7 +11,7 @@ import SkillsSection from "../components/sections/SkillsSection";
 const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <SEO title="Portafolio" />
+      <SEO title="Ricardo De Leon - Desarrollo de aplicaciones web y moviles" />
       <AuthorSection />
       <AboutSection />
       <SkillsSection />

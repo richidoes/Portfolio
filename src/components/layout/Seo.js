@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
-function SEO({ description, lang, title, keywords, image, url, author }) {
+function SEO({ description, title, keywords, image, url, author }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -13,6 +13,7 @@ function SEO({ description, lang, title, keywords, image, url, author }) {
             description
             author
             image
+            url
           }
         }
       }
@@ -20,32 +21,37 @@ function SEO({ description, lang, title, keywords, image, url, author }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title;
+  const metaTitle = title || site.siteMetadata?.title;
   const metaAuthor = author || site.siteMetadata.author;
   const metaUrl = url || site.siteMetadata.url;
   const metaImage = image || site.siteMetadata.image;
   const metaKeywords = keywords || [
-    "ricardodeleon",
-    "Ricardo De Leon",
-    "ricardo de leon",
+    "react",
+    "react native",
+    "front-end",
     "desarrollador frontend",
     "desarrollador web",
     "desarrollador aplicaciones moviles",
-    "react",
-    "react native",
+    "ricardodeleon",
+    "Ricardo De Leon",
+    "ricardo de leon",
   ];
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: "es",
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={metaTitle}
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: metaKeywords,
         },
         {
           property: `og:title`,
@@ -72,20 +78,16 @@ function SEO({ description, lang, title, keywords, image, url, author }) {
           content: `summary_large_image`,
         },
         {
+          name: `github:site`,
+          content: title,
+        },
+        {
           name: `github:creator`,
           content: metaAuthor,
         },
         {
           name: `github:title`,
           content: title,
-        },
-        {
-          name: `github:description`,
-          content: metaDescription,
-        },
-        {
-          name: `github:image`,
-          content: metaImage,
         },
       ].concat(
         metaKeywords && metaKeywords.lenth > 0
@@ -98,12 +100,6 @@ function SEO({ description, lang, title, keywords, image, url, author }) {
     />
   );
 }
-
-SEO.defaultProps = {
-  lang: `es`,
-  meta: [],
-  description: ``,
-};
 
 SEO.propTypes = {
   description: PropTypes.string,
