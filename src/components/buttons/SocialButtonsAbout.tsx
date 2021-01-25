@@ -28,7 +28,7 @@ const SocialButtons: React.FC = () => {
       </a>
 
       <a
-        href="https://drive.google.com/uc?export=download&id=10i_rf26T88Jcb-A7MfqcMxuDsnZQpXeI"
+        href="https://drive.google.com/uc?export=download&id=1I6Wml9-NifW9KOjHwA7K9rQIy0D6idzf"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -1,5 +1,11 @@
 export const skills = [
   {
+    logo: "images/logos/html.png",
+    title: "HTML",
+    knowledge: [{ title: "" }],
+    background: "linear-gradient(180deg, #e34c26 0%, #f06529 100%)",
+  },
+  {
     logo: "images/logos/css-logo.png",
     title: "CSS",
     knowledge: [
