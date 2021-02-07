@@ -113,7 +113,7 @@ const Projects = () => {
             (openweathermap.org) y actualizándolos en pantalla.
             <br />
             La aplicacion solo requiere que escriba el nombre de la ciudad y el
-            codigo de su pais, ej: city : Guadalajara | coutry code: mx.
+            codigo de su pais, ej: city : guadalajara | coutry code: mx.
             <br />
             <br />
             Tecnologias usadas : React.

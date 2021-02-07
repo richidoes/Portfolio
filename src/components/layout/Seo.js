@@ -13,7 +13,7 @@ function SEO({ description, title, keywords, image, url, author }) {
             description
             author
             image
-            url
+            siteUrl
           }
         }
       }
@@ -23,7 +23,7 @@ function SEO({ description, title, keywords, image, url, author }) {
   const metaDescription = description || site.siteMetadata.description;
   const metaTitle = title || site.siteMetadata?.title;
   const metaAuthor = author || site.siteMetadata.author;
-  const metaUrl = url || site.siteMetadata.url;
+  const metaUrl = url || site.siteMetadata.siteUrl;
   const metaImage = image || site.siteMetadata.image;
   const metaKeywords = keywords || [
     "react",
