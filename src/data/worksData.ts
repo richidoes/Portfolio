@@ -15,12 +15,11 @@ export const nicegdl: work = {
   github: "https://github.com/richidoes/niceGDL",
 };
 
-export const pokedex: work = {
-  title: "Pokedex",
-  image: "images/works/pokedex.svg",
-  getApp: "https://pokedex-56112.web.app/",
-  github:
-    "https://github.com/richidoes/master-react/tree/master/pokedex-with-red-ux",
+export const nextric: work = {
+  title: "NEXTRIC",
+  image: "images/works/nextric.svg",
+  getApp: "https://nextric-app.vercel.app/",
+  github: "https://github.com/richidoes/social-blogging-platform",
 };
 
 export const course: work = {
@@ -30,6 +29,14 @@ export const course: work = {
   getApp:
     "https://drive.google.com/uc?export=download&id=1y8t2KOMlephV3SmAhRvc12Gbr9dpLX5Y",
   github: "https://github.com/richidoes/courses-app",
+};
+
+export const pokedex: work = {
+  title: "Pokedex",
+  image: "images/works/pokedex.svg",
+  getApp: "https://pokedex-56112.web.app/",
+  github:
+    "https://github.com/richidoes/master-react/tree/master/pokedex-with-red-ux",
 };
 
 export const weather: work = {

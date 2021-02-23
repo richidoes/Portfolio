@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import { nicegdl, pokedex, course, weather } from "../../data/worksData";
+import {
+  nicegdl,
+  pokedex,
+  course,
+  weather,
+  nextric,
+} from "../../data/worksData";
 import { themes } from "../styles/ColorStyles";
 import { H3, MediumText } from "../styles/TextStyles";
 
@@ -39,29 +45,28 @@ const Projects = () => {
           </a>
         </TextWrapper>
       </Container>
-      <Container className="pokedex">
-        <ImageWrapper id="pokeImage">
-          <WebImage src={pokedex.image} resizeMode="contain" />
+      <Container className="nextric">
+        <ImageWrapper id="nextImage">
+          <WebImage src={nextric.image} resizeMode="contain" />
         </ImageWrapper>
         <TextWrapper>
-          <Title>{pokedex.title}</Title>
+          <Title>{nextric.title}</Title>
           <Description>
-            Aplicación Web que nos muestra un listado de pokemones traido de una
-            Api externa (pokeapi.co), podremos ver algunos de los atributos y la
-            apariencia del pokemon que seleccionemos.
+            Nextric es una demo full-stack de una plataforma social de blogs,
+            inspirada en sitios como DEV.to y Medium.
             <br />
-            La web utiliza un <Strong>sistema de rutas protegidas</Strong> donde
-            solo el usuario registrado tiene acceso al listado asi como a otras
-            caracteristicas como cambiar su foto de perfil y su nombre de
-            usuario.
+            Los autores pueden crear contenido con su nombre de usuario
+            personalizado y luego publicarlo públicamente con una representación
+            compatible con SEO, mientras que los lectores pueden marcar o dar me
+            gusta a las publicaciones en tiempo real.
             <br />
             <br />
-            Tecnologias usadas : React, Redux, Firebase.
+            Tecnologias usadas : NextJS, React, Sass, Firebase.
           </Description>
-          <a href={pokedex.getApp} target="_blank" rel="noopener noreferrer">
+          <a href={nextric.getApp} target="_blank" rel="noopener noreferrer">
             Visitar Web
           </a>
-          <a href={pokedex.github} target="_blank" rel="noopener noreferrer">
+          <a href={nextric.github} target="_blank" rel="noopener noreferrer">
             Ver Codigo
           </a>
         </TextWrapper>
@@ -97,6 +102,33 @@ const Projects = () => {
             Descargar la app (solo android)
           </a>
           <a href={course.github} target="_blank" rel="noopener noreferrer">
+            Ver Codigo
+          </a>
+        </TextWrapper>
+      </Container>
+      <Container className="pokedex">
+        <ImageWrapper id="pokeImage">
+          <WebImage src={pokedex.image} resizeMode="contain" />
+        </ImageWrapper>
+        <TextWrapper>
+          <Title>{pokedex.title}</Title>
+          <Description>
+            Aplicación Web que nos muestra un listado de pokemones traido de una
+            Api externa (pokeapi.co), podremos ver algunos de los atributos y la
+            apariencia del pokemon que seleccionemos.
+            <br />
+            La web utiliza un <Strong>sistema de rutas protegidas</Strong> donde
+            solo el usuario registrado tiene acceso al listado asi como a otras
+            caracteristicas como cambiar su foto de perfil y su nombre de
+            usuario.
+            <br />
+            <br />
+            Tecnologias usadas : React, Redux, Firebase.
+          </Description>
+          <a href={pokedex.getApp} target="_blank" rel="noopener noreferrer">
+            Visitar Web
+          </a>
+          <a href={pokedex.github} target="_blank" rel="noopener noreferrer">
             Ver Codigo
           </a>
         </TextWrapper>
@@ -154,7 +186,8 @@ const Container = styled.div`
   }
 
   div#pokeImage,
-  div#weatherImage {
+  div#weatherImage,
+  div#nextImage {
     order: 1;
 
     @media (max-width: 790px) {
