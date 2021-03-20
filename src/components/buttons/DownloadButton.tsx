@@ -9,11 +9,10 @@ interface AppProps {
 
 const DownloadButton: React.FC<AppProps> = ({ title, subtitle }) => {
   return (
-    <a
+    <Link
       href="https://drive.google.com/uc?export=download&id=1I6Wml9-NifW9KOjHwA7K9rQIy0D6idzf"
       target="_blank"
       rel="noopener noreferrer"
-      style={{ width: 280 }}
     >
       <Wrapper>
         <IconWrapper>
@@ -25,7 +24,7 @@ const DownloadButton: React.FC<AppProps> = ({ title, subtitle }) => {
           <Subtitle>{subtitle}</Subtitle>
         </TextWrapper>
       </Wrapper>
-    </a>
+    </Link>
   );
 };
 
@@ -57,20 +56,38 @@ const Wrapper = styled.div`
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
     transform: translateY(-3px);
   }
+
+  @media (max-width: 450px) {
+    height: 70px;
+    a {
+      width: 240px;
+      height: 70px;
+    }
+  }
+`;
+
+const Link = styled.a`
+  width: 280px;
+
+  @media (max-width: 450px) {
+    width: 220px;
+    height: 70px;
+  }
 `;
 
 const Title = styled(Caption2)`
   color: black;
+
+  @media (max-width: 450px) {
+    font-size: 13px;
+  }
 `;
 
 const Subtitle = styled(SmallText)`
   color: black;
   opacity: 0.7;
 `;
-const Icon = styled.img`
-  width: 29px;
-  height: 29px;
-`;
+
 const IconWrapper = styled.div`
   width: 45px;
   height: 45px;
@@ -86,15 +103,38 @@ const IconWrapper = styled.div`
     //when hover wrapper do this to IconWrapper
     filter: hue-rotate(10deg) brightness(150%) saturate(120%);
   }
+
+  @media (max-width: 450px) {
+    width: 38px;
+    height: 38px;
+  }
 `;
+
 const TextWrapper = styled.div`
   display: grid;
   gap: 4px;
 `;
+
+const Icon = styled.img`
+  width: 29px;
+  height: 29px;
+
+  @media (max-width: 450px) {
+    width: 20px;
+    height: 20px;
+  }
+`;
+
 const Ring = styled.img`
   position: absolute;
   top: -15px;
   left: -16px;
+
+  @media (max-width: 450px) {
+    top: -16px;
+    left: -17px;
+    width: 80px;
+  }
 
   ${Wrapper}:hover & {
     //when hover wrapper do this to ring

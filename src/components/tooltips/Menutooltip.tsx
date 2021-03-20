@@ -22,7 +22,7 @@ export default Menutooltip;
 const Wrapper = styled.div`
   position: absolute;
   top: 60px;
-  right: 30px;
+  right: 40px;
   background: rgba(15, 14, 71, 0.3);
   box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25),
     inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
@@ -38,8 +38,8 @@ const Wrapper = styled.div`
   visibility: ${(props: any) => (props.isOpen ? "visible" : "hidden")};
   transform: ${(props: any) =>
     props.isOpen
-      ? "skewY(0deg) rotate(0deg) translateY(0px)"
-      : "skewY(-5deg) rotate(5deg) translateY(-30px)"};
+      ? "skewY(0deg) rotate(0deg) translateY(60px)"
+      : "skewY(-5deg) rotate(5deg) translateY(30px)"};
   /* display: ${(props) =>
     props.isOpen
       ? "block"

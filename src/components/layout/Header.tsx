@@ -35,30 +35,32 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <Wrapper>
-      <Link to="/">
-        <img src="images/logos/icon-mini.svg" alt="Logo" />
-      </Link>
+    <>
+      <Wrapper>
+        <Link to="/">
+          <img src="images/logos/logo-rick.svg" alt="Logo" />
+        </Link>
 
-      <MenuWrapper count={navbarData.length} ref={ref}>
-        {navbarData.map((item, index) => (
-          <MenuButton item={item} key={index} />
-        ))}
-        <HamburgerWrapper>
-          <MenuButton
-            item={{
-              title: "",
-              icon: "/images/icons/hamburger.svg",
-              link: "/",
-            }}
-            onClick={(event) => handleClick(event)}
-          />
-        </HamburgerWrapper>
-      </MenuWrapper>
+        <MenuWrapper count={navbarData.length} ref={ref}>
+          {navbarData.map((item, index) => (
+            <MenuButton item={item} key={index} />
+          ))}
+          <HamburgerWrapper>
+            <MenuButton
+              item={{
+                title: "",
+                icon: "/images/icons/hamburger.svg",
+                link: "/",
+              }}
+              onClick={(event) => handleClick(event)}
+            />
+          </HamburgerWrapper>
+        </MenuWrapper>
+      </Wrapper>
       <div ref={tooltipRef}>
         <Menutooltip isOpen={isOpen} />
       </div>
-    </Wrapper>
+    </>
   );
 };
 
@@ -66,21 +68,15 @@ export default Header;
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 60px;
-  display: grid;
-  grid-template-columns: 44px auto;
-  width: 100%;
+  display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
-  padding: 0 30px;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    top: 30px;
-  }
-  @media (max-width: 450px) {
-    top: 20px;
-    padding: 0 20px;
-  }
+  max-width: 1234px;
+  height: 44px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  padding: 60px 30px;
 `;
 
 const MenuWrapper = styled.div`
@@ -89,7 +85,6 @@ const MenuWrapper = styled.div`
   grid-template-columns: repeat(${(props) => props.count}, auto);
 
   @media (max-width: 768px) {
-    grid-template-columns: auto;
     > div {
       //hide divs on menu and only shows hamburger
       display: none;
@@ -98,6 +93,8 @@ const MenuWrapper = styled.div`
 `;
 const HamburgerWrapper = styled.span`
   display: none;
+  position: absolute;
+  right: 40px;
 
   @media (max-width: 768px) {
     //turned into span makes the other divs hide and hamburger show

@@ -22,8 +22,9 @@ const Wrapper = styled.div`
     transform: scale(0.6);
     transform-origin: top left;
   }
-  @media (max-width: 450px) {
-    transform: scale(0.4);
+
+  @media (max-width: 660px) {
+    display: none;
   }
 
   div {
@@ -55,7 +56,8 @@ const Wrapper = styled.div`
     }
     &.mockup5 {
       transition-delay: 0.2s;
-      transform: translate(-90px, 30px);
+      /* transform: translate(-90px, 30px); */
+      transform: translate(5px, 8px);
     }
     :hover {
       //self
@@ -118,8 +120,8 @@ const Wrapper = styled.div`
     position: absolute;
     width: 399px;
     height: 274px;
-    left: 194px;
-    top: 262px;
+    left: 78px;
+    top: 228px;
 
     background: url("images/animations/mockup4.svg"), rgba(39, 20, 62, 0.3);
     box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
@@ -133,8 +135,8 @@ const Wrapper = styled.div`
     position: absolute;
     width: 412px;
     height: 274px;
-    left: 616px;
-    top: 262px;
+    left: 375px;
+    top: 250px;
 
     background: url("images/animations/mockup5.svg"), rgba(39, 20, 62, 0.3);
     box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);

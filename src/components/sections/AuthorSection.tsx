@@ -6,6 +6,7 @@ import { themes } from "../styles/ColorStyles";
 import MockupAnimation from "../animations/MockupAnimation";
 import WaveBackground from "../background/WaveBackground";
 import DownloadButton from "../buttons/DownloadButton";
+import SocialLinks from "../buttons/SocialLinks";
 
 const AuthorSection: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const AuthorSection: React.FC = () => {
             moviles multi-plataforma.
           </Description>
           <DownloadButton title="Resumen (cv)" subtitle="Descargar" />
+          <SocialLinks />
         </TextWrapper>
         <MockupAnimation />
       </ContentWrapper>
@@ -44,19 +46,21 @@ const animation = keyframes`
 const Wrapper = styled.div`
   overflow: hidden;
 `;
+
 const ContentWrapper = styled.div`
   max-width: 1234px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 200px 30px 300px 30px;
+  padding: 200px 20px 50px 20px;
   display: grid;
-  grid-template-columns: 360px auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 80px;
 
-  @media (max-width: 450px) {
-    grid-template-columns: auto;
-    gap: 60px;
-    padding: 150px 20px 250px;
+  @media (max-width: 768px) {
+    gap: unset;
   }
 `;
+
 const TextWrapper = styled.div`
   max-width: 360px;
   display: grid;
@@ -78,6 +82,7 @@ const TextWrapper = styled.div`
     }
   }
 `;
+
 const Title = styled(H1)`
   color: ${themes.dark.text1};
   background: linear-gradient(180deg, #730040 0%, #301cbe 100%);
@@ -92,8 +97,22 @@ const Title = styled(H1)`
     color: transparent;
   }
 
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
   @media (max-width: 450px) {
     font-size: 45px;
   }
+  @media (max-width: 350px) {
+    font-size: 34px;
+  }
 `;
-const Description = styled(MediumText)``;
+
+const Description = styled(MediumText)`
+  width: 320px;
+
+  @media (max-width: 450px) {
+    font-size: 16px;
+    width: 280px;
+  }
+`;
