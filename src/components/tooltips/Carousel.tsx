@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
-import { skills } from "../../data/cardsData";
+import { cards } from "../../data/cardsData";
 import { H3 } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
 
@@ -47,7 +47,7 @@ const Carousel: React.FC = () => {
   return (
     <Wrapper>
       <Slider {...settings}>
-        {skills.map((card, index) => (
+        {cards.map((card, index) => (
           <Container key={index}>
             <BackBox style={{ background: card.background }} />
             <CardWrapper>

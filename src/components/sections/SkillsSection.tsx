@@ -1,17 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
-import { H3 } from "../styles/TextStyles";
+import { H2 } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
 import Carousel from "../tooltips/Carousel";
 import SkillsBackground from "../background/SkillsBackground";
+import SkillsSlider from "../animations/SkillsSlider";
 
 const SkillsSection = () => {
   return (
     <Wrapper id="skillsSection">
-      <SkillsBackground />
-      <Title>Habilidades</Title>
-      <Carousel />
+      <Container>
+        <Title>Habilidades</Title>
+        <SkillsSlider />
+        {/* <Carousel /> */}
+      </Container>
     </Wrapper>
   );
 };
@@ -19,25 +22,28 @@ const SkillsSection = () => {
 export default SkillsSection;
 
 const Wrapper = styled.div`
-  position: relative;
-  overflow: hidden;
-  margin-top: 150px;
+  max-width: 1234px;
+  min-height: 60vh;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `;
 
-const Title = styled(H3)`
-  width: 140px;
-  height: 40px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+const Container = styled.div`
+  padding: 60px 20px 0px;
 
-  line-height: 130%;
+  h2 {
+    text-align: center;
+    align-self: flex-start;
+  }
+`;
 
+const Title = styled(H2)`
   color: ${themes.dark.text2};
 
   @media (prefers-color-scheme: light) {
     color: #3913b8;
-  }
-  @media (max-width: 450px) {
-    margin-bottom: 0;
   }
 `;

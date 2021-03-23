@@ -1,4 +1,4 @@
-export const skills = [
+export const cards = [
   {
     logo: "images/logos/html.png",
     title: "HTML",
