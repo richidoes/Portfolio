@@ -7,7 +7,7 @@ import {
   course,
   weather,
   nextric,
-} from "../../data/worksData";
+} from "../../data/projectsData";
 import { themes } from "../styles/ColorStyles";
 import { H3, MediumText } from "../styles/TextStyles";
 

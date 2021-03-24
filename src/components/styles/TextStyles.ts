@@ -14,8 +14,7 @@ export const H2: HTMLElement = styled.h2`
   }
 `;
 export const H3: HTMLElement = styled.h3`
-  font-weight: bold;
-  font-size: 30px;
+  font-size: 28px;
 
   @media (max-width: 450px) {
     font-size: 24px;

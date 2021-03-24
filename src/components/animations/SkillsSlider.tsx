@@ -71,12 +71,21 @@ const Wrapper = styled.div`
       position: absolute;
       width: 15%;
       height: 100%;
+      z-index: 2;
+
       background: linear-gradient(
         to right,
-        white 0%,
+        #1f1f47 0%,
         rgba(255, 255, 255, 0) 100%
       );
-      z-index: 2;
+
+      @media (prefers-color-scheme: light) {
+        background: linear-gradient(
+          to right,
+          #f2f6ff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
     }
 
     ::before {

@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-import { H3 } from "../styles/TextStyles";
+import { H2 } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
-import Projects from "../layout/Projects";
-import ProjectsCubes from "../animations/ProjectsCubes";
+import SkillsBackground from "../background/SkillsBackground";
+import Cards from "../layout/Cards";
 
 const ProjectsSection = () => {
   return (
     <Wrapper id="projectsSection">
-      <ProjectsCubes />
-      <Title>Proyectos</Title>
-      <Projects />
+      <SkillsBackground />
+      <Container>
+        <Title>Proyectos</Title>
+        <Cards />
+      </Container>
     </Wrapper>
   );
 };
@@ -19,18 +21,22 @@ const ProjectsSection = () => {
 export default ProjectsSection;
 
 const Wrapper = styled.div`
-  position: relative;
-  margin-top: 150px;
+  margin-top: 60px;
+  overflow: hidden;
 `;
 
-const Title = styled(H3)`
-  width: 140px;
-  height: 40px;
+const Container = styled.div`
+  max-width: 1234px;
+  min-height: 100vh;
   margin: 0 auto;
-  margin-bottom: 30px;
+  padding: 60px 20px 0px;
 
-  line-height: 130%;
+  h2 {
+    text-align: center;
+  }
+`;
 
+const Title = styled(H2)`
   color: ${themes.dark.text2};
 
   @media (prefers-color-scheme: light) {
