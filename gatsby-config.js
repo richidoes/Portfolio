@@ -10,7 +10,7 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 module.exports = {
   siteMetadata: {
     title: `Ricardo De Leon`,
-    description: `Este es mi sitio web, donde podras ver mi portafolio de proyectos y saber mas sobre mis habilidades y conocimientos.`,
+    description: `This is my website, where you can see my portfolio of projects and know more about my skills and knowledge.`,
     siteUrl,
     image: `images/logos/icon-mini.svg`,
     gitHubUsername: `@richidoes`,
@@ -28,9 +28,6 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-offline",
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: "gatsby-plugin-manifest",
       options: {

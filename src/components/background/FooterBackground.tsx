@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 const Wave = styled.img`
   position: absolute;
   z-index: -1;
-  top: 250px;
+  top: 290px;
 
   @media (min-width: 1440px) {
     width: 100%;
@@ -27,7 +27,7 @@ const Wave = styled.img`
 `;
 
 const TopWave = styled(Wave)`
-  top: 12px;
+  top: 50px;
   transform: scaleY(0.3) scaleX(-1);
 
   @media (prefers-color-scheme: dark) {

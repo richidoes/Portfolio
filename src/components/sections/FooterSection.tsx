@@ -2,18 +2,27 @@ import React from "react";
 import styled from "styled-components";
 
 import FooterBackground from "../background/FooterBackground";
-import { BodyIntro, MediumText } from "../styles/TextStyles";
+import { H2, MediumText } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
-import SocialButtonsFooter from "../buttons/SocialButtonsFooter";
+import SocialLinks from "../buttons/SocialLinks";
 
 const FooterSection = () => {
+  const year = new Date().getFullYear();
+
   return (
     <Wrapper id="footerSection">
       <FooterBackground />
       <ContentWrapper>
-        <Text id="contact">Contactame</Text>
-        <SocialButtonsFooter />
-        <Info id="owner">Ricardo De Leon &copy; 2021</Info>
+        <Title>Contactame</Title>
+        <SocialLinks />
+        <Info>
+          Construido con
+          <img src="images/logos/gatsby-logo.svg" alt="gatsby logo" />
+          <img src="images/logos/logo-react.svg" alt="react logo" />
+          por Ricardo De Leon
+          <img src="images/logos/logo-rick.svg" alt="personal logo" />
+          {year}
+        </Info>
       </ContentWrapper>
     </Wrapper>
   );
@@ -27,37 +36,39 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   max-width: 1234px;
+  min-height: 100vh;
   margin: 0 auto;
   margin-top: 150px;
-  padding: 200px 30px 100px 30px;
-  display: grid;
-
-  #owner {
-    align-items: flex-end;
-    height: 150px;
-  }
+  padding: 230px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-const Text = styled(BodyIntro)`
-  display: flex;
-  height: 100px;
-  margin-bottom: 25px;
-  justify-content: center;
-  align-items: center;
+const Title = styled(H2)`
   color: ${themes.dark.text2};
 
-  @media (max-width: 750px) {
+  @media (max-width: 550px) {
     font-size: 20px;
   }
 `;
+
 const Info = styled(MediumText)`
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 1rem;
+  text-align: center;
   color: ${themes.dark.text2};
 
-  @media (max-width: 750px) {
-    font-size: 15px;
+  img {
+    height: 24px;
+    padding: 0 5px;
+
+    @media (max-width: 550px) {
+      height: 18px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    font-size: 13px;
   }
 `;

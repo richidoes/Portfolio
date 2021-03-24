@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 import { H2 } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
-import Carousel from "../tooltips/Carousel";
-import SkillsBackground from "../background/SkillsBackground";
 import SkillsSlider from "../animations/SkillsSlider";
 
 const SkillsSection = () => {
@@ -13,7 +11,6 @@ const SkillsSection = () => {
       <Container>
         <Title>Habilidades</Title>
         <SkillsSlider />
-        {/* <Carousel /> */}
       </Container>
     </Wrapper>
   );

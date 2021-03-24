@@ -33,7 +33,7 @@ export const BodyMain: HTMLElement = styled.p`
 export const MediumText: HTMLElement = styled.p`
   font-weight: normal;
   font-size: 18px;
-  line-height: 130%;
+  line-height: 140%;
 `;
 export const Caption: HTMLElement = styled.p`
   font-weight: 500;

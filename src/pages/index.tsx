@@ -5,7 +5,6 @@ import SEO from "../components/layout/Seo";
 
 import AuthorSection from "../components/sections/AuthorSection";
 import AboutSection from "../components/sections/AboutSection";
-
 import FooterSection from "../components/sections/FooterSection";
 import ProjectsSection from "../components/sections/ProjectsSection";
 import SkillsSection from "../components/sections/SkillsSection";
@@ -15,7 +14,6 @@ const IndexPage: React.FC = () => {
     <Layout>
       <SEO title="Ricardo De Leon - Desarrollo de aplicaciones web y moviles" />
       <AuthorSection />
-
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />

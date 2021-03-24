@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SkillsBackground: React.FC = () => {
+const ProjectsBackground: React.FC = () => {
   return (
     <Wrapper>
       <Wave src="/images/waves/certificate-wave2.svg" />
@@ -11,7 +11,7 @@ const SkillsBackground: React.FC = () => {
   );
 };
 
-export default SkillsBackground;
+export default ProjectsBackground;
 
 const Wrapper = styled.div`
   position: relative;

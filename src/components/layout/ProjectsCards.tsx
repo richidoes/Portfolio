@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { projects } from "../../data/projectsData";
 import { Caption, H3 } from "../styles/TextStyles";
 
-const Cards = () => {
+const ProjectsCards = () => {
   return (
     <Wrapper>
       {projects.map((project, index) => (
@@ -44,7 +44,7 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default ProjectsCards;
 
 const Wrapper = styled.div`
   margin-top: 150px;

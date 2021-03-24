@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 import { H2 } from "../styles/TextStyles";
 import { themes } from "../styles/ColorStyles";
-import SkillsBackground from "../background/SkillsBackground";
-import Cards from "../layout/Cards";
+import ProjectsBackground from "../background/ProjectsBackground";
+import ProjectsCards from "../layout/ProjectsCards";
 
 const ProjectsSection = () => {
   return (
     <Wrapper id="projectsSection">
-      <SkillsBackground />
+      <ProjectsBackground />
       <Container>
         <Title>Proyectos</Title>
-        <Cards />
+        <ProjectsCards />
       </Container>
     </Wrapper>
   );
