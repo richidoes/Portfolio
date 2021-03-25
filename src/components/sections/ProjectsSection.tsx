@@ -11,7 +11,7 @@ const ProjectsSection = () => {
     <Wrapper id="projectsSection">
       <ProjectsBackground />
       <Container>
-        <Title>Proyectos</Title>
+        <Title>Projects</Title>
         <ProjectsCards />
       </Container>
     </Wrapper>

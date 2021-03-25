@@ -9,7 +9,7 @@ const SkillsSection = () => {
   return (
     <Wrapper id="skillsSection">
       <Container>
-        <Title>Habilidades</Title>
+        <Title>Skills</Title>
         <SkillsSlider />
       </Container>
     </Wrapper>

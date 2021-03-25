@@ -18,16 +18,16 @@ const AuthorSection: React.FC = () => {
             Ricardo <br />
             De Leon <br />
             <span>
-              Desarrollador
-              <br />
               Front-end
+              <br />
+              Developer
             </span>
           </Title>
           <Description>
-            Desarrollo de sitios y aplicaciones web, asi como aplicaciones
-            moviles multi-plataforma.
+            Development of web sites and applications, as well as cross-platform
+            mobile applications.
           </Description>
-          <DownloadButton title="Resumen (cv)" subtitle="Descargar" />
+          <DownloadButton title="Resume (cv)" subtitle="Download" />
           <SocialLinks />
         </TextWrapper>
         <MockupAnimation />

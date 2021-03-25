@@ -1,21 +1,21 @@
 export const navbarData = [
   {
-    title: "Sobre mi",
+    title: "About",
     icon: "/images/icons/profile.svg",
     link: "#aboutSection",
   },
   {
-    title: "Habilidades",
+    title: "Skills",
     icon: "/images/icons/billing.svg",
     link: "#skillsSection",
   },
   {
-    title: "Proyectos",
+    title: "Projects",
     icon: "/images/icons/book.svg",
     link: "#projectsSection",
   },
   {
-    title: "Contactame",
+    title: "Contact",
     icon: "/images/icons/chat.svg",
     link: "#footerSection",
   },
@@ -23,22 +23,22 @@ export const navbarData = [
 
 export const dropdownData = [
   {
-    title: "Sobre mi",
+    title: "About",
     icon: "/images/icons/profile.svg",
     link: "#aboutSection",
   },
   {
-    title: "Habilidades",
+    title: "SKills",
     icon: "/images/icons/billing.svg",
     link: "#skillsSection",
   },
   {
-    title: "Proyectos",
+    title: "Projects",
     icon: "/images/icons/book.svg",
     link: "#projectsSection",
   },
   {
-    title: "Contactame",
+    title: "Contact",
     icon: "/images/icons/chat.svg",
     link: "#footerSection",
   },

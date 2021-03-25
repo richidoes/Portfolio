@@ -9,8 +9,8 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
   siteMetadata: {
-    title: `Ricardo De Leon`,
-    description: `This is my website, where you can see my portfolio of projects and know more about my skills and knowledge.`,
+    title: `Ricardo De Leon - Frontend Developer`,
+    description: `Frontend Developer portfolio, you can see my projects and know more about my skills and knowledge.`,
     siteUrl,
     image: `images/logos/icon-mini.svg`,
     gitHubUsername: `@richidoes`,

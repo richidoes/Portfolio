@@ -26,12 +26,13 @@ function SEO({ description, title, keywords, image, url, author }) {
   const metaUrl = url || site.siteMetadata.siteUrl;
   const metaImage = image || site.siteMetadata.image;
   const metaKeywords = keywords || [
-    "react",
-    "react native",
-    "front-end",
-    "desarrollador frontend",
+    "react developer",
+    "react native developer",
+    "front-end developer",
+    "frontend developer",
+    "web developer",
     "desarrollador web",
-    "desarrollador aplicaciones moviles",
+    "desarrollador frontend",
     "ricardodeleon",
     "Ricardo De Leon",
     "ricardo de leon",
@@ -40,9 +41,9 @@ function SEO({ description, title, keywords, image, url, author }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang: "es",
+        lang: "en",
       }}
-      title={title}
+      title={metaTitle}
       titleTemplate={metaTitle}
       meta={[
         {

@@ -9,33 +9,31 @@ const AboutSection: React.FC = () => {
   return (
     <Wrapper id="aboutSection">
       <Container>
-        <Title>Sobre Mi</Title>
+        <Title>About me</Title>
         <AboutBubbles />
         <AboutWrapper>
           <ContentWrapper>
             <Text>
-              Hola, mi nombre es Ricardo De Leon, soy un{" "}
-              <span>desarrollador front-end</span> altamente apasionado y
-              profesional.
+              Hi i'm Ricardo De Leon, a self-taught{" "}
+              <span>front-end developer</span> highly passionate and
+              professional.
               <br />
               <br />
-              Mi pasion siempre ha sido el desarrollo de software, pero sobre
-              todo, que este cuente con un diseño atractivo, que enganche a
-              quien lo use y que haga de su experiencia, un recuerdo
-              inolvidable.
+              My passion has always been software development, but above all,
+              that it has an attractive design, that hooks whoever uses it and
+              that makes your experience an unforgettable memory.
+              <br />
+              <br />I have experience in developments ranging from sites built
+              using HTML, CSS and Javascript, to developing web applications
+              with <span>React</span> and cross-platform mobile applications
+              with Expo and <span>React Native.</span>
               <br />
               <br />
-              Tengo experiencia en desarrollos que van desde sitios construidos
-              usando HTML, CSS y Javascript, hasta el desarrollo de aplicaciones
-              web con <span>React</span> y aplicaciones móviles multi-plataforma
-              con Expo y <span>React Native.</span>
+              If you are interested in working with me or hiring me, you can
+              contact me through my email or my social networks.
               <br />
               <br />
-              Si estas interesado en trabajar conmigo o contratarme, puedes
-              contactarme mediante mi correo o mis redes sociales.
-              <br />
-              <br />
-              !Estoy emocionado por que creeemos las aplicaciones del futuro!
+              I'm excited that we create the applications of the future!
             </Text>
           </ContentWrapper>
         </AboutWrapper>

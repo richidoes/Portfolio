@@ -13,13 +13,13 @@ const FooterSection = () => {
     <Wrapper id="footerSection">
       <FooterBackground />
       <ContentWrapper>
-        <Title>Contactame</Title>
+        <Title>Contact me</Title>
         <SocialLinks />
         <Info>
-          Construido con
+          Built with
           <img src="images/logos/gatsby-logo.svg" alt="gatsby logo" />
           <img src="images/logos/logo-react.svg" alt="react logo" />
-          por Ricardo De Leon
+          by Ricardo De Leon
           <img src="images/logos/logo-rick.svg" alt="personal logo" />
           {year}
         </Info>
