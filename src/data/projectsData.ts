@@ -33,9 +33,9 @@ export const projects = [
     title: "weather app",
     alt: "weather app preview",
     desc:
-      "Weather Web application where we can request the current weather in a city,btaining the data from an external API (openweathermap.org) and updating it on the screen.",
+      "Weather Web application where we can request the current weather in a city,obtaining the data from an external API (openweathermap.org) and updating it on the screen.",
     techs: [{ logo: "images/logos/logo-react.svg", alt: "logo react" }],
-    getApp: "https://weather-app-42148.web.app/",
+    getApp: "https://weather-app9619.netlify.app/",
     github: "https://github.com/richidoes/weather-app",
   },
   {
