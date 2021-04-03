@@ -29,6 +29,12 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-offline",
     {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.ricardodeleon.net`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
