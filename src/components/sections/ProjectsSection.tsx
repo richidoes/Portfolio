@@ -34,6 +34,10 @@ const Container = styled.div`
   h2 {
     text-align: center;
   }
+
+  @media (max-width: 450px) {
+    padding: 60px 0px 0px;
+  }
 `;
 
 const Title = styled(H2)`

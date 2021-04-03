@@ -23,11 +23,6 @@ const AboutSection: React.FC = () => {
               that it has an attractive design, that hooks whoever uses it and
               that makes your experience an unforgettable memory.
               <br />
-              <br />I have experience in developments ranging from sites built
-              using HTML, CSS and Javascript, to developing web applications
-              with <span>React</span> and cross-platform mobile applications
-              with Expo and <span>React Native.</span>
-              <br />
               <br />
               If you are interested in working with me or hiring me, you can
               contact me through my email or my social networks.

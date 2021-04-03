@@ -5,11 +5,6 @@ export const navbarData = [
     link: "#aboutSection",
   },
   {
-    title: "Skills",
-    icon: "/images/icons/billing.svg",
-    link: "#skillsSection",
-  },
-  {
     title: "Projects",
     icon: "/images/icons/book.svg",
     link: "#projectsSection",
@@ -26,11 +21,6 @@ export const dropdownData = [
     title: "About",
     icon: "/images/icons/profile.svg",
     link: "#aboutSection",
-  },
-  {
-    title: "SKills",
-    icon: "/images/icons/billing.svg",
-    link: "#skillsSection",
   },
   {
     title: "Projects",

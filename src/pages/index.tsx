@@ -7,7 +7,6 @@ import AuthorSection from "../components/sections/AuthorSection";
 import AboutSection from "../components/sections/AboutSection";
 import FooterSection from "../components/sections/FooterSection";
 import ProjectsSection from "../components/sections/ProjectsSection";
-import SkillsSection from "../components/sections/SkillsSection";
 
 const IndexPage: React.FC = () => {
   return (
@@ -15,7 +14,6 @@ const IndexPage: React.FC = () => {
       <SEO title="Ricardo De Leon - Frontend Developer" />
       <AuthorSection />
       <AboutSection />
-      <SkillsSection />
       <ProjectsSection />
       <FooterSection />
     </Layout>

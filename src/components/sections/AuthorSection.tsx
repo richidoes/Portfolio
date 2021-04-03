@@ -59,10 +59,13 @@ const ContentWrapper = styled.div`
   @media (max-width: 768px) {
     gap: unset;
   }
+  @media (max-width: 650px) {
+    grid-template-columns: unset;
+    place-items: center;
+  }
 `;
 
 const TextWrapper = styled.div`
-  max-width: 360px;
   display: grid;
   gap: 30px;
 
@@ -79,6 +82,13 @@ const TextWrapper = styled.div`
     }
     :nth-child(3) {
       animation-delay: 0.4s;
+    }
+  }
+
+  @media (max-width: 650px) {
+    a,
+    div {
+      margin: auto;
     }
   }
 `;
@@ -100,6 +110,10 @@ const Title = styled(H1)`
   @media (max-width: 768px) {
     font-size: 50px;
   }
+  @media (max-width: 650px) {
+    font-size: 60px;
+    text-align: center;
+  }
   @media (max-width: 450px) {
     font-size: 45px;
   }
@@ -109,10 +123,15 @@ const Title = styled(H1)`
 `;
 
 const Description = styled(MediumText)`
-  width: 320px;
-
+  @media (max-width: 650px) {
+    width: 420px;
+    text-align: center;
+  }
   @media (max-width: 450px) {
+    width: unset;
     font-size: 16px;
-    width: 280px;
+  }
+  @media (max-width: 350px) {
+    font-size: 14px;
   }
 `;
