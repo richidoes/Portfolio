@@ -25,8 +25,7 @@ export const projects = [
       { logo: "images/logos/logo-firebase.svg", alt: "logo firebase" },
     ],
     getApp: "https://pokedex-56112.web.app/",
-    github:
-      "https://github.com/richidoes/master-react/tree/master/pokedex-with-red-ux",
+    github: "https://github.com/richidoes/pokedex",
   },
   {
     img: "images/works/weather-card.png",
